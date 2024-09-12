@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gourmet Catering</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            color: black;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        /* Header */
+        .header {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background-color: white;
+            color: black;
+        }
+
+        .header .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .header .nav {
+            display: flex;
+        }
+
+        .header .nav a {
+            color:black;
+            text-decoration: none;
+            margin-left: 20px;
+        }
+
+        .header .nav a:hover {
+            text-decoration: underline;
+        }
+
+        /* Hero Section */
+        .hero {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+
+        .hero img {
+            width: 100%;
+            max-width: 1200px;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        /* Main Content */
+        .content {
+            width: 100%;
+            max-width: 1200px;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .content .section {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 20px;
+            padding: 10px;
+            min-height: 200px;
+        }
+
+        .content .section .text {
+            width: 50%;
+            padding: 20px;
+            text-align: left;
+        }
+
+        .content .section .image-container {
+            width: 50%;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .content .section img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        /* Footer */
+        .footer {
+            width: 100%;
+            background-color: white;
+            color: black;
+            text-align: center;
+            padding: 20px;
+        }
+        @media only screen and (max-width: 600px) {
+            .container {
+                display: block;
+               
+                background-color: black;     
+                gap: 20px;        
+            }  
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <div class="header">
+        <div class="logo">Gourmet Catering</div>
+        <div class="nav">
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <div class="hero">
+        <img src="Images/hamburger.jpg" alt="Hero Image">
+    </div>
+
+    <!-- Main Content -->
+    <div class="content">
+        <div id="about" class="section">
+            <div class="image-container">
+                <img src="images/tablesetting.jpg" alt="About Image">
+            </div>
+            <div class="text">
+                <h2 style="padding-left: 210px;">About Catering</h2>
+                <p>Tradition since 1889</p>
+                <p>The Catering was founded in blabla by Mr. Smith in lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. We only use seasonal ingredients.</p>
+                <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+        </div>
+
+        <div id="services" class="section">
+            <div class="text">
+                <h1 style="padding-left: 210px;padding-bottom: 50px;">Menu</h1>
+                <h2>Bread Breakfast</h2>
+                <p>Assortment of fresh baked fruit breads and muffins 5.50</p>
+
+                <h2>Honey Almond Granola with Fruits</h2>
+                <p>Natural cereal of honey toasted oats, raisins, almonds and dates 7.00</p>
+
+                <h2>Belgian Waffle</h2>
+                <p>Vanilla flavored batter with malted flour 7.50</p>
+
+                <h2>Scrambled eggs</h2>
+                <p>Scrambled eggs, roasted red pepper and garlic, with green onions 7.50</p>
+
+                <h2>Blueberry Pancakes</h2>
+                <p>With syrup, butter and lots of berries 8.50</p>
+            </div>
+            <div class="image-container">
+                <img src="images/tablesetting2.jpg" alt="Services Image">
+            </div>
+        </div>
+
+        <div id="contact" class="section">
+            <pre>
+                <h1 style="padding-left: 120px;">Contact Us</h1>
+                
+                We offer full-service catering for any event, large or small. We understand your needs and we will cater the food to satisfy the biggerst criteria of them all, both look and taste. Do not hesitate to contact us.
+
+                Catering Service, 42nd Living St, 43043 New York, NY
+                
+                You can also contact us by phone 00553123-2323 or email catering@catering.com, or you can send us a message here:</pre>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <p>&copy; 2024 Gourmet Catering. All rights reserved.</p>
+    </div>
+</body>
+</html>
